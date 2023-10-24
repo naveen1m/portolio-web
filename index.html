@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Naveen Kumar" />
+  <meta property="og:image" content="./assets/project.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <title>Portfolio-naveen</title>
+  <link rel="canonical" href="" />
+  <link rel="shortcut icon" href="/Nlogo.png" type="image/x-icon" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/loader.css" />
+  <!-- CDN's -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="./scripts/firebaseInit.js"></script>
+</head>
+
+<body>
+  <!--Loader-->
+  <!-- <div class="loaderDiv">
+    <div class="loader"></div>
+    <p>Loading page</p>
+  </div> -->
+  <!--Toaster-->
+  <div class="toaster"></div>
+  <!--Div for background-->
+  <div class="bg-div"></div>
+  <!-----------------------
+         HEADER
+         ------------------------->
+  <header class="header" id="header">
+    <div class="logo img">
+      <img class="" src="./assets/Nlogo.png" alt="logo" />
+    </div>
+    <p class="logo initials" tabindex="1" href=""></p>
+    <div class="navbar">
+      <ul class="navbar-list">
+        <li>
+          <a class="navbar-link active" name="home" onclick="scrollToSection(this),toggleNav()" tabindex="4">Home</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="about" onclick="scrollToSection(this),toggleNav()" tabindex="5">About</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="skills" onclick="scrollToSection(this),toggleNav()" tabindex="6">Skills</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="projects" onclick="scrollToSection(this),toggleNav()" tabindex="7">Projects</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="education" onclick="scrollToSection(this),toggleNav()" tabindex="8">Education</a>
+        </li>
+        <li>
+          <a class="navbar-link" name="experience" onclick="scrollToSection(this),toggleNav()"
+            tabindex="9">Experience</a>
+        </li>
+      </ul>
+      <a class="contactBtn button" name="getInTouch" tabindex="10" href="mailto:navstr10@gmail.com"
+        target="_blank">Contact</a>
+      <ion-icon tabindex="9" name="close-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+    </div>
+    <ion-icon tabindex="3" name="menu-outline" class="mobile-nav-icon" onclick="toggleNav()"></ion-icon>
+  </header>
+  <!-----------------------
+         HOME SECTION
+         ------------------------->
+  <section class="section home-section" id="home" tabindex="42">
+    <div>
+      <h1>Hey, I'm <span class="name">Naveen</span></h1>
+      <p class="aboutShort">
+        A skilled
+        <strong>full-stack web developer</strong> dedicated to crafting captivating digital experiences using the latest
+        technologies. My expertise creates standout digital experiences. <br>
+        Let's create together!
+      </p>
+      <button class="about-me-btn button" name="about" onclick="scrollToSection(this)" tabindex="2">
+        About Me
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+    </div>
+    <div class="">
+      <div class="imgDiv">
+        <!-- <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><img src="./assets/profilegif.gif"
+            width="100%" height="100%" style="position:absolute" f></img></div> -->
+
+        <img src="./assets/profilegif.gif" class="profile-image" />
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+         ABOUT SECTION
+         ------------------------->
+  <section id="about" class="section about-section" tabindex="11">
+    <div class="about-ill">
+      <style>
+        .image-container {
+          position: relative;
+          display: inline-block;
+        }
+
+        .image-container img {
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-container img:hover {
+          transform: rotate(-5deg) scale(1.1);
+          /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+        }
+      </style>
+
+      <div class="image-container">
+        <img src="./assets/small-boy.png" alt="Memoji" />
+      </div>
+    </div>
+    <div class="aboutMe" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+      <h2 class="name">Naveen Kumar</h2>
+      <div class="professionContainer">
+        <p class="profession">freelancer</p>
+        <p class="profession">Web Developer</p>
+      </div>
+      <br />
+      <p class="aboutLong">
+
+        I'm an <strong>undergrad</strong>, self taught web developer. I possess skilled talent and immense experience in
+        creating and maintaining visually appealing and user-friendly websites. I have comprehensive knowledge of
+        various web
+        development technologies such as <span style="font-weight: 600;"> HTML, CSS, JavaScript, ReactJS, Express js,
+          MongoDB </span> and
+        <style>
+          #more:hover {
+            text-decoration: underline;
+          }
+        </style>
+        <span style="font-weight: 600;">
+          <a name="skills" id="more" onclick="scrollToSection(this),toggleNav()"
+            style="color: rgb(5, 129, 166); ">more</a></span>.
+
+      <p style="margin-top: 0.5rem;">Overall, I guarantee the highest level of professionalism, technical proficiency,
+        and client satisfaction in
+        every aspect of web development.</p>
+
+
+      <!-- I am a MERN stack developer with a solid background in web development. As a beginner in machine learning, I am
+        eager to expand my skillset and make an impact. Currently interning at CG4T for DIKSHA, I am actively involved
+        in developing an NPM module. I have participated in symposium and hackathons where i achieved 4th place. By
+        merging my web development proficiency with emerging ML expertise, I strive to craft groundbreaking applications
+        that harness the full potential of both technologies. I am passionate about creating innovative solutions that
+        drive positive change. -->
+      </p>
+      <br />
+      <a class="button" href="https://drive.google.com/file/d/1ZLzL3LvbULkEFIPls3bxaSsalWpOTJDQ/preview" target="_blank"
+        tabindex="12">
+        Resume
+        <ion-icon name="document-outline"></ion-icon>
+      </a>
+    </div>
+    <ul class="social-menu" data-aos="fade-left" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+      <li id="linkedin">
+        <a href="https://www.linkedin.com/in/naveen-kumar-814903228/" aria-label="linkedin" class="linkedin"
+          tabindex="13"><i class="fab fa-linkedin-in"></i></a>
+      </li>
+      <li id="github">
+        <a href="https://github.com/stupiddint" aria-label="github" class="github" tabindex="14"><i
+            class="fab fa-github"></i></a>
+      </li>
+      <li id="instagram">
+        <a href="https://www.instagram.com/navstr10/" aria-label="instagram" class="instagram" tabindex="15"><i
+            class="fab fa-instagram"></i></a>
+      </li>
+      <li id="twitter">
+        <a href="https://x.com/naveen1O?t=xfVkr3wfOeoj-y8BMnPBZA&s=09" aria-label="twitter" class="twitter"
+          tabindex="16"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+  </section>
+  <!-----------------------
+         SKILLS SECTION
+         ------------------------->
+  <section class="section skill-section" id="skills" tabindex="17" style="padding-top: 7rem;">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">
+        My Skills
+        <!-- <p>Tiles in <span>blue</span> are some of my major skills.</p> -->
+      </h1>
+      <div class="skills" style="width: 85%; ">
+        <style>
+          .skills img:hover {
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+          }
+        </style>
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+          alt="JavaScript">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+          alt="TypeScript">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+          alt="React">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white"
+          alt="TailwindCSS">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
+          alt="NodeJS">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB"
+          alt="Express.js">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
+          alt="Postman">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white"
+          alt="MongoDB">
+        <img width="150rem" height="47rem"
+          src="https://img.shields.io/badge/mysql-%2300758F.svg?style=for-the-badge&logo=mysql&logoColor=orange"
+          alt="MySQL">
+        <img width="150rem" height="47rem"
+          src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+          alt="AWS">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+          alt="Python">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white"
+          alt="NumPy">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white"
+          alt="Pandas">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white"
+          alt="scikit-learn">
+        <img width="150rem" height="47rem"
+          src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
+          alt="Java">
+        <img width="200rem" height="47rem"
+          src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="LINUX">
+        <img width="120rem" height="47rem"
+          src="https://img.shields.io/badge/Git-fc6d26?style=for-the-badge&logo=git&logoColor=white" alt="GIT">
+
+
+      </div>
+
+    </div>
+  </section>
+  <!-------------------------
+         PROJECT SECTION
+         ------------------------->
+  <section class="section main project-section" id="projects" tabindex="18">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <div class="section-header">
+        <h1 class="title">
+          My recent work
+          <p class="sectionDesc">
+            Here are a few past projects I've worked on.
+            <!-- Want to see more? -->
+            <!-- <a href="projects.html" tabindex="22">View More ></a> -->
+          </p>
+        </h1>
+        <img class="ProjectHeaderImage" src="./assets/project-head.png" alt="Project header image" />
+      </div>
+      <div class="project card-container">
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project/blogweb1.png" alt="Project image" />
+          </div>
+          <br />
+          <h6>Blog App</h6>
+          <p class="techstack">
+            <span> Techstack </span> - Reactjs, TailwindCSS, react-quill, react-toastify, Nodejs, Expressjs, mongodb
+          </p>
+          <!-- <p class="library">
+            <span> Libraries </span> - TailwindCSS, react-quill, react-toastify
+          </p> -->
+          <div class="options">
+            <a class="viewElem" href="https://zingy-empanada-c73d66.netlify.app/" target="_blank">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a class="githubElem" href="https://github.com/stupiddint/Blog-app" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <!-- <button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button> -->
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img
+              src="https://user-images.githubusercontent.com/94122792/241362645-4738b3e6-253b-4bc5-bd36-9010cffa3568.png"
+              alt="Project image" />
+          </div>
+          <br />
+          <h6>Predicting Hospital-acquired infections (HAIs)</h6>
+          <p class="techstack">
+            <span> Techstack </span> - Machine Learning, Reactjs, TailwindCSS, FastAPI
+          </p>
+          <!-- <p class="library">
+            <span> Libraries </span> - TailwindCSS
+          </p> -->
+          <div class="options">
+            <!-- <a class="viewElem" href="https://sushaingupta.netlify.app" target="_blank">
+              <ion-icon name="open-outline"></ion-icon>
+            </a> -->
+            <a class="githubElem" href="https://github.com/stupiddint/Symposium-source-code" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <!-- <button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button> -->
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project/NMCG_.png" alt="Project image" />
+          </div>
+          <br />
+          <h6>Namami Gange Guide</h6>
+          <p class="techstack">
+            <span> Techstack </span> - Machine Learning, Reactjs, Nodejs, Expressjs, HuggingFace chatbot API,
+            TailwindCSS, MantineUI
+          </p>
+          <!-- <p class="library">
+            <span> Libraries </span> - TailwindCSS, MantineUI
+          </p> -->
+          <div class="options">
+            <!-- <a class="viewElem" href="https://github.com/stupiddint/Namami-Gange-Guide" target="_blank">
+              <ion-icon name="open-outline"></ion-icon>
+            </a> -->
+            <a class="githubElem" href="https://github.com/stupiddint/Namami-Gange-Guide" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <!-- <button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button> -->
+          </div>
+        </div>
+        <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project/npm-package scrnshot.png" alt="Project image" />
+          </div>
+          <br />
+          <h6>Anuvaad client sdk</h6>
+          <p class="techstack">
+            <span> Techstack </span> - JavaScript, JsDocs, bhashiniAPI
+          </p>
+          <!-- <p class="library">
+            <span> Libraries </span> - Library 1, Library 2
+          </p> -->
+          <div class="options">
+            <a class="viewElem" href="https://github.com/ULCA-IN/anuvaad-client-sdk" target="_blank">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a class="githubElem" href="https://github.com/stupiddint/anuvaad-client-sdk" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <!-- <button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button> -->
+          </div>
+        </div>
+        <!-- <div class="project card 1" tabindex="">
+          <div class="imgDiv">
+            <img src="./assets/project.png" alt="Project image" />
+          </div>
+          <br />
+          <h6>Project Title 5</h6>
+          <p class="techstack">
+            <span> Techstack </span> - Techstack 1, Techstack 2
+          </p>
+          <p class="library">
+            <span> Libraries </span> - Library 1, Library 2
+          </p>
+          <div class="options">
+            <a class="viewElem" href="https://sushaingupta.netlify.app" target="_blank">
+              <ion-icon name="open-outline"></ion-icon>
+            </a>
+            <a class="githubElem" href="https://github.com" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <button class="share">
+              <ion-icon name="link-outline">Copied text!</ion-icon>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+         EDUCATION SECTIONS
+         ------------------------->
+  <section class="section education-section" id="education" tabindex="23">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">
+        Education
+        <!-- <p>These are some of my qualifications.</p> -->
+      </h1>
+      <div class="card-container">
+        <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">BTech in Computer Science and Information Technology</h6>
+          <p class="instituteName">Institue of Technical Education and Research, Bhubhaneswar</p>
+          <p class="instituteDesc">Institute description</p>
+          <br />
+          <!-- <p class="status Pursuing">Persuing dd-mm-yyyy</p> -->
+          <p class="status Pursuing">Pursuing 2021 - 2025</p>
+
+        </div>
+        <!-- <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">Course name 2</h6>
+          <p class="instituteName">Institute name 2</p>
+          <p class="instituteDesc">Institute description</p>
+          <br />
+          <p class="status Completed">Completed dd-mm-yyyy</p>
+        </div> -->
+        <!-- <div class="card">
+          <div class="imgDiv">
+            <img src="./assets/edu.png" alt="Institute image" />
+          </div>
+          <br />
+          <h6 class="courseName">Course name 3</h6>
+          <p class="instituteName">Institute name 3</p>
+          <p class="instituteDesc">Institute description</p>
+          <br />
+          <p class="status Completed">Persuing dd-mm-yyyy</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <!-------------------------
+         EXPERIENCE SECTION
+         ------------------------->
+  <section class="section experience-section" id="experience" tabindex="24">
+    <div style="
+          width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        " data-aos="zoom-in-up" data-aos-duration="700" data-aos-once="true">
+      <h1 class="title">
+        Experience
+        <p>These are the compaines where I've previously worked.</p>
+      </h1>
+      <div class="expContainer">
+        <ul class="listOfExp">
+          <li class="companyName active" tabindex="${tabindex}">
+            Code for GovTech 2023 at Diksha
+          </li>
+        </ul>
+        <div class="expDesc">
+          <h4 class="expTitle">Internships, remote work</h4>
+          <p class="period">From July - to August 2023</p>
+          <br />
+          <p class="desc">
+            I created a JavaScript-based NPM module that enables easy
+            integration with content editors and web frontends, providing robust
+            support for Indian languages. I was the sole developer chosen for this
+            project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-----------------------
+         CONTACT FORM
+         ------------------------->
+  <div class="formDiv">
+    <img alt="contact illustration" src="./assets/contact.png" />
+    <form id="myform">
+      <div class="user-box">
+        <input type="text" id="name" required /><label for="Name">Your Name</label>
+      </div>
+      <div class="user-box">
+        <input type="email" id="email" required /><label for="Email">Email Address</label>
+      </div>
+      <div class="user-box">
+        <textarea id="message" required></textarea><label for="Message">Enter your message</label>
+      </div>
+      <button type="submit" class="submit-btn button">Submit</button>
+    </form>
+    <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+  </div>
+  <!-----------------------
+         FOOTER SECTION
+         ------------------------->
+  <footer class="footer" tabindex="35">
+    <div class="getInTouch">
+      <h3>Start a project?</h3>
+      <p>
+        Interested in working together? We should queue up a time to chat.
+      </p>
+      <a class="getInTouchBtn button" target="_blank" href="mailto:navstr10@gmail.com" tabindex="36">Get in touch</a>
+    </div>
+    <div class="footerParent">
+      <div class="profInfo">
+        <div style="padding-right: 1rem;">
+          <img height="50px " width="50px" src="./assets/Emailpng.png" alt="Profile Image" />
+        </div>
+        <p>
+          Naveen Kumar<br />Mail me at
+          <a href="https://www.gmail.com" tabindex="37">navstr10@gmail.com</a>
+        </p>
+      </div>
+      <!-- done -->
+      <div class="reachMeOut">
+        <h3>Reach me out on</h3>
+        <ul class="social-menu">
+          <li id="linkedin">
+            <a href="https://www.linkedin.com/in/naveen-kumar-814903228/" class="linkedin" tabindex="38"
+              aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li id="github">
+            <a href="https://github.com/stupiddint" aria-label="github" class="github" tabindex="39"><i
+                class="fab fa-github"></i></a>
+          </li>
+          <li id="instagram">
+            <a href="https://www.instagram.com/navstr10/" aria-label="instagram" class="instagram" tabindex="40"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+          <li id="twitter">
+            <a href="https://x.com/naveen1O?t=xfVkr3wfOeoj-y8BMnPBZA&s=09" aria-label="twitter" class="twitter"
+              tabindex="41"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <p class="developerInfo">
+      A template by
+      <a href="https://www.linkedin.com/in/sushain-gupta" tabindex="50">Naveen Kumar</a>
+    </p> -->
+  </footer>
+  <!-- Scripts -->
+  <script src="./scripts/firebase.js"></script>
+  <script src="./scripts/commonScript.js"></script>
+  <script src="./scripts/script.js"></script>
+  <!-- External scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
