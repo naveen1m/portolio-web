@@ -24,18 +24,7 @@ module.exports = {
             {
                 test: /\.html$/, // Match HTML files
                 use: 'html-loader', // Use html-loader to handle HTML files
-            },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[contenthash].[ext]',
-                        },
-                    },
-                ],
-            },
+            }
         ]
     },
 
