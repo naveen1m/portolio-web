@@ -562,6 +562,7 @@ a {
   width: -moz-max-content;
   width: max-content;
   padding: 0.1rem 0.5rem;
+  padding-top: 0;
   border-radius: 0.5rem;
   color: var(--dark-gray);
   background-color: #e2e8f0;
@@ -710,6 +711,7 @@ a {
 
 .project-section .card-container .card ion-icon {
   padding: 1rem;
+  padding-top: 0;
   width: 2rem;
   height: 2rem;
   color: var(--dark-gray);
@@ -793,6 +795,7 @@ a {
   border-radius: 1rem;
   margin: auto;
   padding: 0 0.5rem;
+  padding-top: 0;
   font-weight: 500;
   border-radius: 0.3rem;
 }
@@ -822,6 +825,8 @@ a {
   height: max-content;
   border-radius: 1rem;
   padding: 2rem;
+  padding-top: 0;
+
 }
 
 .experience-section .listOfExp {
@@ -837,8 +842,8 @@ a {
   height: max-content;
   padding: 2rem 2rem;
   border-left: 2px solid rgba(0, 0, 0, 0.152);
-  transition: ease-out 0.2s;
-  -webkit-transition: ease-out 0.2s;
+  transition: ease-out 0.1s;
+  -webkit-transition: ease-out 0.1s;
   word-wrap: break-word;
 }
 
@@ -849,8 +854,8 @@ a {
 
 .experience-section .listOfExp li:hover {
   background-color: rgba(0, 0, 0, 0.04);
-  transition: all 0.1s;
-  -webkit-transition: all 0.1s;
+  transition: all 0.01s;
+  -webkit-transition: all 0.01s;
 }
 
 .experience-section .expDesc {
@@ -1189,8 +1194,8 @@ a {
     right: 0;
     width: 50vmin;
     transform: translate(100%);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
   }
 
   .header .navbar .navbar-list {
@@ -1239,8 +1244,8 @@ a {
 
   .header.active .navbar {
     transform: translate(0);
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
     padding: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   }
@@ -1533,7 +1538,7 @@ a {
 
 @media (max-width: 900px) {
   .section {
-    padding: 12rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .home-section h1 {
