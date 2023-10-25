@@ -36,7 +36,7 @@ module.exports = {
     devServer: {
         static: path.join(__dirname, 'public'), // Serve your content from the 'public' directory
         compress: true,
-        port: 9000,
+        port: 8000,
     },
     performance: {
         hints: process.env.NODE_ENV === 'production' ? 'warning' : false,

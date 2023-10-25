@@ -70,7 +70,7 @@ section {
   /* min-height: 100vh; */
   background-color: var(--light-gray);
   color: var(--text-gray);
-  transition: all 0.7s;
+  transition: all 0.5s;
 }
 
 .card-container {
@@ -90,8 +90,8 @@ section {
   border-radius: 1rem;
   height: 40rem;
   width: 35rem;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 
@@ -176,8 +176,8 @@ p {
   border: none;
   border-radius: 0.5rem;
   padding: 0.7rem 2rem;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   font-size: 1.6rem;
   text-decoration: none;
   color: var(--light-gray);
@@ -255,8 +255,8 @@ a {
   align-items: center;
   text-decoration: none;
   padding: 0.8rem;
-  transition: 0.6s;
-  -webkit-transition: all 0.6s;
+  transition: 0.4s;
+  -webkit-transition: all 0.4s;
   border-radius: 0%;
   aspect-ratio: 1/1;
 }
@@ -347,8 +347,8 @@ a {
   padding: 0 7rem;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
 }
 
 .header .logo.initials {
@@ -390,13 +390,13 @@ a {
   display: inline-block;
   font-weight: 300;
   padding: 0.5rem 1.2rem;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
+  transition: all 0.01s;
+  -webkit-transition: all 0.01s;
 }
 
 .header .navbar .navbar-list .navbar-link:hover {
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
   text-underline-offset: 0.7rem;
   transform: scale(1.1);
   cursor: var(--hand-pointer);
@@ -597,8 +597,8 @@ a {
   justify-content: space-evenly;
   width: 15rem;
   height: 15rem;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 
 .skill-section .skill-container div img {
@@ -657,13 +657,13 @@ a {
 .project-section .sectionDesc a {
   color: #1a8cff;
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .project-section .sectionDesc a:hover {
   color: #1e3a8a;
   text-decoration: underline;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .project-section .card-container .card {
@@ -688,8 +688,8 @@ a {
   right: 0;
   border-radius: 1rem;
   justify-content: center;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   overflow: hidden;
 }
 
@@ -703,8 +703,8 @@ a {
   border-radius: 1rem;
   background-color: var(--fade-black);
   transform: translateX(100%);
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   opacity: 0;
 }
 
@@ -718,8 +718,8 @@ a {
   margin: 1.5rem;
   scale: 0;
   opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 }
 
 .project-section .card-container .card button {
@@ -742,8 +742,8 @@ a {
 .project-section .card-container .card:focus ion-icon {
   scale: 1;
   opacity: 1;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
   background-color: var(--light-gray);
 }
 
@@ -761,8 +761,8 @@ a {
   .project-section .card:hover ion-icon {
     scale: 1;
     opacity: 1;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
   }
 
   .project-section .card:hover ion-icon:hover {
@@ -837,8 +837,8 @@ a {
   height: max-content;
   padding: 2rem 2rem;
   border-left: 2px solid rgba(0, 0, 0, 0.152);
-  transition: ease-out 0.5s;
-  -webkit-transition: ease-out 0.5s;
+  transition: ease-out 0.2s;
+  -webkit-transition: ease-out 0.2s;
   word-wrap: break-word;
 }
 
@@ -849,8 +849,8 @@ a {
 
 .experience-section .listOfExp li:hover {
   background-color: rgba(0, 0, 0, 0.04);
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
 }
 
 .experience-section .expDesc {
@@ -1189,8 +1189,8 @@ a {
     right: 0;
     width: 50vmin;
     transform: translate(100%);
-    transition: all 0.95s;
-    -webkit-transition: all 0.95s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
 
   .header .navbar .navbar-list {
@@ -1239,8 +1239,8 @@ a {
 
   .header.active .navbar {
     transform: translate(0);
-    transition: all 0.95s;
-    -webkit-transition: all 0.95s;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
     padding: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   }
