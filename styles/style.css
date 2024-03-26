@@ -33,7 +33,7 @@ body {
   overflow-x: hidden;
 }
 
-.bg-div {
+/* .bg-div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -42,7 +42,7 @@ body {
   z-index: -1;
   background-image: url(../assets/bg-proj.png);
   animation: MOVE-BG 100s infinite linear;
-}
+} */
 
 @keyframes MOVE-BG {
   0% {
